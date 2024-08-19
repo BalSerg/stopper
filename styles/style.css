@@ -1,0 +1,82 @@
+body {
+    font-size: 16px;
+}
+
+html {
+    --Spacing-0: 0px;
+    --Spacing-1: 4px;
+    --Spacing-2: 8px;
+    --Spacing-3: 16px;
+    --Spacing-4: 24px;
+    --Spacing-5: 32px;
+    --Spacing-6: 48px;
+    --Spacing-7: 64px;
+    --Radius-1: 4px;
+    --Radius-2: 8px;
+    --Radius-3: 16px;
+    --Radius-4: 24px;
+    --Radius-5: 32px;
+
+    --serif-font: "Onest", sans-serif;
+
+    --Colors-objects-background-Surface-secondary: #fff;
+    --Colors-objects-Text-Text-primary: #1e1e1e;
+}
+
+html.ruwiki-feature-color-theme-color-paper-enabled {
+    --Colors-objects-background-Surface-secondary: #fffaeb;
+    --Colors-objects-Text-Text-primary: #22201b;
+}
+
+html.ruwiki-feature-color-theme-color-dark-enabled {
+    --Colors-objects-background-Surface-secondary: #2c2c2c;
+    --Colors-objects-Text-Text-primary: #f5f5f5;
+}
+
+html.ruwiki-feature-color-theme-font-focus-enabled {
+    --serif-font: "Onest", sans-serif;
+}
+
+html.ruwiki-feature-color-theme-font-paper-enabled {
+    --serif-font: "Lora", serif;
+}
+
+.stopper-wrapper {
+    display: flex;
+    gap: 0 60px;
+    padding: 32px;
+    background: #f3f4f4;
+}
+
+.stopper {
+    padding: var(--Spacing-4);
+    display: flex;
+    gap: 21px 0;
+    flex-direction: column;
+    text-align: center;
+
+    border-radius: var(--Radius-4);
+    background: var(--Colors-objects-background-Surface-secondary);
+}
+
+.stopper-title {
+    font-family: var(--serif-font);
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    font-weight: 600;
+    color: var(--Colors-objects-Text-Text-primary);
+}
+
+.stopper-button {
+    padding: 12px var(--Spacing-3);
+
+    font-family: var(--serif-font);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+
+    background: #6024E0;
+    border-radius: var(--Radius-2);
+    border: none;
+}
