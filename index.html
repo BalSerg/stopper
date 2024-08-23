@@ -83,10 +83,21 @@
         line-height: 1.5rem;
         font-weight: 500;
         color: #fff;
+        text-decoration: none;
 
         background: #6024E0;
         border-radius: var(--Radius-2);
         border: none;
+
+        cursor: pointer;
+
+        opacity: 1;
+        transition: all ease-out 300ms;
+    }
+
+    .stopper-button:hover {
+        opacity: 0.7;
+        transition: all ease-in 300ms;
     }
 </style>
 <div class="stopper-wrapper">
@@ -94,22 +105,22 @@
         <div class="stopper-image">
             <img src="img/pict1_2.png" alt=""/>
         </div>
-        <div class="stopper-title">Настройте дизайн чтения</div>
+        <div class="stopper-title">Настройте дизайн<br/> чтения</div>
         <button class="stopper-button">Настроить</button>
     </div>
     <div class="stopper">
         <div class="stopper-image">
             <img src="img/pict2_2.png" alt=""/>
         </div>
-        <div class="stopper-title">Настройте дизайн чтения</div>
-        <button class="stopper-button">Настроить</button>
+        <div class="stopper-title">Вступите в группу<br/> "Авторы РУВИКИ"</div>
+        <a href="" target="_blank" class="stopper-button">Перейти</a>
     </div>
     <div class="stopper">
         <div class="stopper-image">
             <img src="img/pict3_2.png" alt=""/>
         </div>
-        <div class="stopper-title">Настройте дизайн чтения</div>
-        <button class="stopper-button">Настроить</button>
+        <div class="stopper-title">Читайте на других <br/>языках</div>
+        <button class="stopper-button">Выбрать язык</button>
     </div>
 </div>
 </body>
