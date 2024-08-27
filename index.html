@@ -52,8 +52,8 @@
     .stopper-wrapper {
         display: flex;
         gap: 0 60px;
-        padding: 32px;
-        background: #f3f4f4;
+        //padding: 32px;
+        //background: #f3f4f4;
     }
 
     .stopper {
@@ -65,6 +65,12 @@
 
         border-radius: var(--Radius-4);
         background: var(--Colors-objects-background-Surface-secondary);
+    }
+
+    @media screen and (max-width:1023px) {
+        .stopper {
+            width: 100%;
+        }
     }
 
     .stopper-title {
@@ -82,7 +88,7 @@
         font-size: 1rem;
         line-height: 1.5rem;
         font-weight: 500;
-        color: #fff;
+        color: #fff !important;
         text-decoration: none;
 
         background: #6024E0;
