@@ -61,10 +61,20 @@
         display: flex;
         gap: 21px 0;
         flex-direction: column;
+
+        text-decoration: none;
         text-align: center;
 
         border-radius: var(--Radius-4);
+        border: none;
         background: var(--Colors-objects-background-Surface-secondary);
+
+        cursor: pointer;
+    }
+
+    .stopper:hover {
+        opacity: 0.8;
+        transition: all ease-in 300ms;
     }
 
     @media screen and (max-width:1023px) {
@@ -74,6 +84,8 @@
     }
 
     .stopper-title {
+        width: 100%;
+
         font-family: var(--serif-font);
         font-size: 1.5rem;
         line-height: 1.875rem;
@@ -83,6 +95,8 @@
 
     .stopper-button {
         padding: 12px var(--Spacing-3);
+        box-sizing: border-box;
+        width: 100%;
 
         font-family: var(--serif-font);
         font-size: 1rem;
@@ -100,34 +114,29 @@
         opacity: 1;
         transition: all ease-out 300ms;
     }
-
-    .stopper-button:hover {
-        opacity: 0.7;
-        transition: all ease-in 300ms;
-    }
 </style>
 <div class="stopper-wrapper">
-    <div class="stopper">
+    <button class="stopper">
         <div class="stopper-image">
             <img src="img/pict1_2.png" alt=""/>
         </div>
         <div class="stopper-title">Настройте дизайн<br/> чтения</div>
-        <button class="stopper-button">Настроить</button>
-    </div>
-    <div class="stopper">
+        <div class="stopper-button">Настроить</div>
+    </button>
+    <a href="" target="_blank" class="stopper">
         <div class="stopper-image">
             <img src="img/pict2_2.png" alt=""/>
         </div>
         <div class="stopper-title">Вступите в группу<br/> "Авторы РУВИКИ"</div>
-        <a href="" target="_blank" class="stopper-button">Перейти</a>
-    </div>
-    <div class="stopper">
+        <div class="stopper-button">Перейти</div>
+    </a>
+    <button class="stopper">
         <div class="stopper-image">
             <img src="img/pict3_2.png" alt=""/>
         </div>
         <div class="stopper-title">Читайте на других <br/>языках</div>
-        <button class="stopper-button">Выбрать язык</button>
-    </div>
+        <div class="stopper-button">Выбрать язык</div>
+    </button>
 </div>
 </body>
 </html>
